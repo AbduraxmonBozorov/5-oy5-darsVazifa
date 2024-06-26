@@ -1,26 +1,34 @@
 /* poppins-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/poppins-v21-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v21-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* poppins-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/poppins-v21-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v21-latin-500.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* poppins-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/poppins-v21-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/poppins-v21-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 * {
@@ -51,21 +59,101 @@ header {
 }
 
 .header__content h2 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 48px;
   font-weight: 600;
   line-height: 50.4px;
   text-align: left;
-  color: #18181B;
+  color: #18181b;
 }
 
-.theme{
-    width: 235px;
-    height: 119px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.theme {
+  width: 235px;
+  height: 119px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #18181b;
+  padding: 10px;
+  border-radius: 106px;
+  position: relative;
+  cursor: pointer;
 }
 
+.dark {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 40px;
+  left: 32px;
+}
 
+.light {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 40px;
+  right: 32px;
+}
+
+.focus {
+  width: 94px;
+  height: 94px;
+  background-color: rgba(210, 210, 210, 0.459);
+  border-radius: 50%;
+  position: absolute;
+  /* transition: all 1s linear; */
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main>.darkMode,
+main>.lightMode {
+  width: 1174px;
+  height: 1271px;
+  border: 1px solid red;
+}
+
+.darkMode {
+  background-color: #18181b;
+  color: white;
+}
+
+.section {
+  height: 500px;
+  position: relative;
+}
+
+.img1 {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  z-index: 1;
+}
+
+.img2 {
+  position: absolute;
+  top: 700px;
+  left: 460px;
+  z-index: 2;
+}
+
+.img3 {
+  position: absolute;
+  top: 465px;
+  left: 360px;
+  z-index: 2;
+}
